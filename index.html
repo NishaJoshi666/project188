@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack a mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Whack a mole <span id="score">0</span></h1>
+
+    <div id="game">
+        <div class="box">
+            <span id="rat1" class="rat"><img src="mole.svg" alt=""></span>
+            <div class="hole"><img src="dirt.svg" alt=""></div>
+        </div>
+        <div class="box">
+            <span id="rat2" class="rat"><img src="mole.svg" alt=""></span>
+            <div class="hole"><img src="dirt.svg" alt=""></div>
+        </div>
+        <div class="box">
+            <span id="rat3" class="rat"><img src="mole.svg" alt=""></span>
+            <div class="hole"><img src="dirt.svg" alt=""></div>
+        </div>
+        <div class="box">
+            <span id="rat4" class="rat"><img src="mole.svg" alt=""></span>
+            <div class="hole"><img src="dirt.svg" alt=""></div>
+        </div>
+        <div class="box">
+            <span id="rat5" class="rat"><img src="mole.svg" alt=""></span>
+            <div class="hole"><img src="dirt.svg" alt=""></div>
+        </div>
+        <div class="box">
+            <span id="rat6" class="rat"><img src="mole.svg" alt=""></span>
+            <div class="hole"><img src="dirt.svg" alt=""></div>
+        </div>
+    </div>
+
+    <div id="youwin">
+        <h1>YOU WIN</h1>
+        <button class="btn" onclick="location.reload()">restart</button>
+    </div>
+
+    <audio src="tink.wav" id="sound1"></audio>
+    <audio src="tom.wav" id="sound2"></audio>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

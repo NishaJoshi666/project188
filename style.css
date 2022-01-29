@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: green;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    font-family: cursive;
+}
+
+#score{
+    background-color: thistle;
+    border-radius: 30px;
+    padding: 0rem 0.5rem;
+}
+
+#game{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 800px;
+    margin: 1rem auto;
+}
+
+.box{
+    margin: 0rem 1px;
+    height: 265px;
+    overflow: hidden;
+}
+
+.hole{
+    margin: 0rem 7px;
+    margin-top: -88px;
+    width: 250px;
+    position: sticky;
+}
+
+.hole img{
+    width: 250px;
+}
+
+.rat{
+    position: relative;
+    top: 240px;
+}
+
+.animate{
+    animation: up 1s linear infinite;
+}
+
+@keyframes up{
+    0%{
+        top: 240px;
+    }
+    50%{
+        top: 10px;
+    }
+    100%{
+        top: 140px;
+    }
+}
+
+#youwin{
+    display: none;
+    color:turquoise;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: wheat;
+    color:whitesmoke;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+}
